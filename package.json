@@ -1,7 +1,7 @@
 {
   "name": "crud-api",
   "version": "1.0.0",
-  "description": "crud api",
+  "description": "node-setup",
   "main": "app.ts",
   "scripts": {
     "start": "npx tsx watch ./src/app.ts",

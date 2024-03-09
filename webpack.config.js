@@ -3,14 +3,14 @@ import { TsconfigPathsPlugin } from 'tsconfig-paths-webpack-plugin'
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 import Dotenv from 'dotenv-webpack'
 
-const __dirname = import.meta.dirname
+const { dirname } = import.meta
 
 const config = {
-  context: __dirname,
-  entry: join(__dirname, 'src', 'app.ts'),
+  context: dirname,
+  entry: join(dirname, 'src', 'app.ts'),
   output: {
     filename: '[name].js',
-    path: join(__dirname, 'dist'),
+    path: join(dirname, 'dist'),
     clean: true,
   },
   target: 'node',
